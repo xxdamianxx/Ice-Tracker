@@ -5,7 +5,6 @@ import java.util.UUID;
 
 @lombok.Getter
 public class Customer {
-
     private Long customerId = UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE;
     @lombok.Setter
     private String name;
