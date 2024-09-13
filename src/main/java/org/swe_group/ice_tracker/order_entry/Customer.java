@@ -17,14 +17,4 @@ public class Customer {
     @lombok.Setter
     private CustomerType customerStatus;
 
-    private Customer(String name, String shippingAddress, String billingAddress, CustomerType customerStatus) {
-        this.name = name;
-        this.shippingAddress = shippingAddress;
-        this.billingAddress = billingAddress;
-        this.customerStatus = customerStatus;
-    }
-
-    public static Customer getInstance(@NonNull String name, @NonNull String shippingAddress, @NonNull String billingAddress, CustomerType customerStatus) {
-        return new Customer(name, shippingAddress, billingAddress, customerStatus);
-    }
 }
